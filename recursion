@@ -1,0 +1,28 @@
+
+/* Jetti Veerraju ADC_RJY recusion */
+#include <stdio.h>
+
+void reverseorder(int n)
+{
+    
+    if (n <= 0)
+    {
+        return;
+    }
+    else {
+        printf("\t %d",n);
+ 
+        
+        reverseorder(n-1);
+    }
+}
+ 
+
+int main()
+{
+    int n = 10;
+ 
+    reverseorder(n);
+
+    return 0;
+}
